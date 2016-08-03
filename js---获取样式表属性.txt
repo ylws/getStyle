@@ -1,0 +1,12 @@
+//获取样式表属性
+function getStyle(el, name ) 
+ {
+　 　 if(window.getComputedStyle) 
+   {
+　 　 　 return window.getComputedStyle(el, null)[name];
+　 　 }
+	else
+	{
+　 　 　 return el.currentStyle[name];
+　 　 }
+}
